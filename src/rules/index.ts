@@ -5,6 +5,7 @@ import { gradleRule } from './gradle.js';
 import { androidSdkRule } from './android-sdk.js';
 import { kotlinRule } from './kotlin.js';
 import { memoryRule } from './memory.js';
+import { localPropertiesRule } from './local-properties.js';
 import { xcodeRule } from './xcode.js';
 import { cocoapodsRule } from './cocoapods.js';
 import { iosTargetRule } from './ios-target.js';
@@ -16,6 +17,7 @@ export const ALL_RULES: Rule[] = [
   androidSdkRule,
   kotlinRule,
   memoryRule,
+  localPropertiesRule,
   xcodeRule,
   cocoapodsRule,
   iosTargetRule,
@@ -28,7 +30,9 @@ export {
   androidSdkRule,
   kotlinRule,
   memoryRule,
+  localPropertiesRule,
   xcodeRule,
   cocoapodsRule,
   iosTargetRule,
 };
+

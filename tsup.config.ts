@@ -10,3 +10,4 @@ export default defineConfig({
     js: '#!/usr/bin/env node',
   },
 });
+

@@ -8,3 +8,4 @@ export * from './reporter/terminal.js';
 export * from './reporter/json.js';
 export * from './reporter/markdown.js';
 export * from './rules/index.js';
+

@@ -83,3 +83,4 @@ describe('iOS Diagnostic Rules', () => {
     expect(res.issues.some((i) => i.id === 'ERR_IOS_DEPLOYMENT_TARGET_TOO_LOW')).toBe(true);
   });
 });
+

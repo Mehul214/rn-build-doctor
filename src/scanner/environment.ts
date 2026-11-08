@@ -152,3 +152,4 @@ export function parseJavaVersion(output: string): string | undefined {
   }
   return raw.split('.')[0];
 }
+

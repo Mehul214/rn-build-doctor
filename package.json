@@ -1,8 +1,11 @@
 {
-  "name": "rn-build-doctor",
+  "name": "@mehul214/rn-build-doctor",
   "version": "1.0.0",
   "description": "Pre-flight build diagnostic tool for React Native. Catch Android and iOS build failures before they happen.",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -33,18 +36,31 @@
     "diagnostic",
     "android",
     "ios",
-    "cli"
+    "cli",
+    "preflight"
   ],
-  "author": "Mehul & Community",
+  "author": "Mehul",
   "license": "MIT",
+  "homepage": "https://github.com/Mehul214/rn-build-doctor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehul214/rn-build-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mehul214/rn-build-doctor/issues"
+  },
   "funding": [
     {
       "type": "github",
-      "url": "https://github.com/sponsors/mehul"
+      "url": "https://github.com/sponsors/Mehul214"
     },
     {
       "type": "buy-me-a-coffee",
-      "url": "https://www.buymeacoffee.com/rnbuilddoctor"
+      "url": "https://buymeacoffee.com/mehulreshac"
+    },
+    {
+      "type": "individual",
+      "url": "https://github.com/Mehul214/rn-build-doctor#-support-via-upi"
     }
   ],
   "dependencies": {
@@ -58,7 +74,7 @@
     "@types/node": "^26.6.6",
     "@types/semver": "^7.8.0",
     "tsup": "^9.0.0",
-    "typescript": "^5.9.3",
+    "typescript": "^5.7.0",
     "vitest": "^5.1.0"
   }
 }

@@ -106,5 +106,21 @@ export function scanAndroid(projectRoot: string): AndroidInfo {
     }
   }
 
+  // 5. Check local.properties
+  const localPropsPath = path.join(androidDir, 'local.properties');
+  result.hasLocalProperties = fs.existsSync(localPropsPath);
+  if (result.hasLocalProperties) {
+    try {
+      const content = fs.readFileSync(localPropsPath, 'utf-8');
+      const sdkDirMatch = content.match(/sdk\.dir\s*=\s*([^\r\n]+)/);
+      if (sdkDirMatch) {
+        result.localPropertiesSdkDir = sdkDirMatch[1].trim().replace(/\\\\/g, '\\');
+      }
+    } catch {
+      // ignore
+    }
+  }
+
   return result;
 }
+

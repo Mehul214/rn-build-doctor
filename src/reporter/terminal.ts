@@ -131,10 +131,13 @@ export function renderTerminalReport(
       chalk.dim('Support open-source development!')
   );
   console.log(
-    ` ☕ Buy Me a Coffee: ${chalk.cyan('https://www.buymeacoffee.com/rnbuilddoctor')}`
+    ` ☕ Buy Me a Coffee: ${chalk.cyan('https://buymeacoffee.com/mehulreshac')}`
   );
   console.log(
-    ` 💖 GitHub Sponsors:  ${chalk.cyan('https://github.com/sponsors/mehul')}`
+    ` 💖 GitHub Sponsors:  ${chalk.cyan('https://github.com/sponsors/Mehul214')}`
+  );
+  console.log(
+    ` 🇮🇳 UPI (India):     ${chalk.cyan('mehulreshamwala7@okhdfcbank')} ${chalk.dim('(Mehul Reshamwala)')}`
   );
   console.log(chalk.dim('─'.repeat(64)));
   console.log();
@@ -167,3 +170,4 @@ function printIssueCard(
   }
   console.log();
 }
+

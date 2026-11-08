@@ -2,15 +2,15 @@
 
 > Pre-flight build health diagnostic tool for React Native. Catch Android and iOS build failures before you run the actual build.
 
-[![npm version](https://img.shields.io/npm/v/rn-build-doctor.svg?color=blue)](https://www.npmjs.com/package/rn-build-doctor)
+[![npm version](https://img.shields.io/npm/v/@mehul214/rn-build-doctor.svg?color=blue)](https://www.npmjs.com/package/@mehul214/rn-build-doctor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Buy Me A Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg)](https://www.buymeacoffee.com/rnbuilddoctor)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink.svg)](https://github.com/sponsors/mehul)
+[![Buy Me A Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg)](https://buymeacoffee.com/mehulreshac)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink.svg)](https://github.com/sponsors/Mehul214)
 
 Instead of waiting 10 minutes for Gradle or Xcode to fail, run one command:
 
 ```bash
-npx rn-build-doctor
+npx @mehul214/rn-build-doctor
 ```
 
 It scans your project configuration and local development environment, identifies potential issues, explains why they matter, and gives you actionable copy-pasteable commands to fix them.
@@ -146,15 +146,38 @@ npx rn-build-doctor --json
 
 ---
 
-## 💖 Support & Donations
+## 💖 Support the Project & Sponsoring
 
-`rn-build-doctor` is open source and maintained for the React Native developer community. If this tool saved your team hours of debugging build issues, please consider supporting development:
+Building and maintaining open-source developer tooling takes dedicated effort. If `rn-build-doctor` saves you or your team hours of debugging Gradle and Xcode failures, please consider supporting development:
 
-- ☕ **[Buy Me A Coffee](https://www.buymeacoffee.com/rnbuilddoctor)**
-- 💖 **[GitHub Sponsors](https://github.com/sponsors/mehul)**
+- ⭐️ **Star the repository on GitHub** (helps more React Native developers discover it)
+- 💖 **[Sponsor on GitHub Sponsors](https://github.com/sponsors/Mehul214)**
+- ☕️ **[Buy Me a Coffee](https://buymeacoffee.com/mehulreshac)**
+
+<p align="left">
+  <a href="https://buymeacoffee.com/mehulreshac" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="42" />
+  </a>
+</p>
+
+### ☕️ Support via UPI
+
+If you're in India or use any UPI-enabled payment app (Google Pay, PhonePe, Paytm, BHIM, Cred, Amazon Pay):
+
+- **UPI ID:** `mehulreshamwala7@okhdfcbank`
+- **Payee Name:** Mehul Reshamwala
+
+<p align="left">
+  <a href="upi://pay?pa=mehulreshamwala7@okhdfcbank&pn=Mehul%20Reshamwala&cu=INR&tn=Support%20rn-build-doctor">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi%3A%2F%2Fpay%3Fpa%3Dmehulreshamwala7%40okhdfcbank%26pn%3DMehul%2520Reshamwala%26cu%3DINR%26tn%3DSupport%2520rn-build-doctor" alt="Scan to Pay with UPI" width="180" height="180" />
+  </a>
+  <br />
+  <sub>Scan with Google Pay / PhonePe / Paytm or <a href="upi://pay?pa=mehulreshamwala7@okhdfcbank&pn=Mehul%20Reshamwala&cu=INR&tn=Support%20rn-build-doctor">tap here on mobile to pay directly</a>.</sub>
+</p>
 
 ---
 
 ## 📜 License
 
-MIT © [Mehul & Contributors](LICENSE)
+MIT © [Mehul](LICENSE)
+

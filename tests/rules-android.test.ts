@@ -3,6 +3,7 @@ import { javaRule } from '../src/rules/java.js';
 import { gradleRule } from '../src/rules/gradle.js';
 import { androidSdkRule } from '../src/rules/android-sdk.js';
 import { memoryRule } from '../src/rules/memory.js';
+import { localPropertiesRule } from '../src/rules/local-properties.js';
 import type { DiagnosticContext } from '../src/types.js';
 
 describe('Android Diagnostic Rules', () => {
@@ -125,4 +126,19 @@ describe('Android Diagnostic Rules', () => {
     const res = await memoryRule.check(ctx);
     expect(res.issues.some((i) => i.id === 'WARN_JVM_HEAP_TOO_LOW')).toBe(true);
   });
+
+  it('detects invalid sdk.dir in android/local.properties', async () => {
+    const ctx: DiagnosticContext = {
+      ...baseContext,
+      android: {
+        ...baseContext.android,
+        hasLocalProperties: true,
+        localPropertiesSdkDir: '/non/existent/android/sdk/path',
+      },
+    };
+    const res = await localPropertiesRule.check(ctx);
+    expect(res.passed).toBe(false);
+    expect(res.issues.some((i) => i.id === 'ERR_INVALID_LOCAL_PROPERTIES_SDK_DIR')).toBe(true);
+  });
 });
+

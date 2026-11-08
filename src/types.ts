@@ -46,6 +46,8 @@ export interface AndroidInfo {
   ndkVersion?: string;
   kotlinVersion?: string;
   jvmArgs?: string;
+  hasLocalProperties?: boolean;
+  localPropertiesSdkDir?: string;
 }
 
 export interface IosInfo {
@@ -107,3 +109,4 @@ export interface DiagnosticReport {
     errors: number;
   };
 }
+

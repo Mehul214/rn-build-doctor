@@ -96,8 +96,10 @@ export function renderMarkdownReport(report: DiagnosticReport): string {
 
   md += `## 💖 Support rn-build-doctor\n\n`;
   md += `If this tool saved you hours of debugging Gradle or Xcode errors, consider supporting its development:\n\n`;
-  md += `- ☕ [Buy Me a Coffee](https://www.buymeacoffee.com/rnbuilddoctor)\n`;
-  md += `- 💖 [GitHub Sponsors](https://github.com/sponsors/mehul)\n`;
+  md += `- 💖 [GitHub Sponsors](https://github.com/sponsors/Mehul214)\n`;
+  md += `- ☕ [Buy Me a Coffee](https://buymeacoffee.com/mehulreshac)\n`;
+  md += `- 🇮🇳 **UPI (India):** \`mehulreshamwala7@okhdfcbank\` (Mehul Reshamwala)\n`;
 
   return md;
 }
+

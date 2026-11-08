@@ -86,3 +86,4 @@ function detectPackageManager(projectRoot: string): 'npm' | 'yarn' | 'pnpm' | 'b
   }
   return 'npm';
 }
+
