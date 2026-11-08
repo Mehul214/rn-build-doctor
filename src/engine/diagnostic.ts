@@ -103,7 +103,7 @@ export async function runDiagnostics(
 
   const report: DiagnosticReport = {
     timestamp: new Date().toISOString(),
-    rnBuildDoctorVersion: '1.0.0',
+    rnBuildDoctorVersion: '1.0.1',
     project,
     environment: env,
     androidInfo: android,

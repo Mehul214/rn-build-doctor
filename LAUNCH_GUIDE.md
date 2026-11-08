@@ -96,3 +96,4 @@ Submit your pull request to [react-native-community/directory](https://github.co
 2. **Buy Me a Coffee**: High-converting for international developers (`https://buymeacoffee.com/mehulreshac`).
 3. **UPI (India)**: Indian developers prefer paying directly through GPay/PhonePe without international transaction fees (`mehulreshamwala7@okhdfcbank`).
 4. **Issue Assistance**: When helping developers fix build issues on GitHub or Reddit, provide your diagnosis and gently mention your sponsor links if it saved their day.
+

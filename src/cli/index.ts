@@ -13,7 +13,7 @@ const program = new Command();
 program
   .name('rn-build-doctor')
   .description('Pre-flight build diagnostic tool for React Native Android and iOS projects')
-  .version('1.0.0')
+  .version('1.0.1')
   .argument('[platform]', 'Platform to diagnose (android, ios, or all)', 'all')
   .option('-v, --verbose', 'Show detailed diagnostic and environment information')
   .option('--json', 'Output results as JSON (ideal for CI/CD pipelines)')
