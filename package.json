@@ -10,7 +10,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "rn-build-doctor": "./dist/cli/index.js"
+    "rn-build-doctor": "./dist/cli.js"
   },
   "files": [
     "dist",
