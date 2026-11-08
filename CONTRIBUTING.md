@@ -57,3 +57,4 @@ export interface Rule {
 ## 💖 Community & Sponsoring
 
 If you find this project valuable, consider starring the repository and supporting via [GitHub Sponsors](https://github.com/sponsors/Mehul214) or [Buy Me a Coffee](https://buymeacoffee.com/mehulreshac).
+

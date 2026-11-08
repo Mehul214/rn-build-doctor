@@ -60,3 +60,4 @@ describe('Environment & Toolchain Rules', () => {
     expect(res.issues.some((i) => i.id === 'WARN_WATCHMAN_NOT_INSTALLED')).toBe(true);
   });
 });
+
