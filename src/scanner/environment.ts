@@ -133,6 +133,16 @@ export async function scanEnvironment(): Promise<HostEnvironment> {
     }
   }
 
+  // 4. Probe Watchman (macOS & Linux)
+  if (osType !== 'windows') {
+    try {
+      const watchmanRes = await execa('watchman', ['--version'], { timeout: 3000 });
+      env.watchmanVersion = watchmanRes.stdout.trim();
+    } catch {
+      // watchman not found
+    }
+  }
+
   return env;
 }
 

@@ -1,5 +1,6 @@
 import type { Rule } from '../types.js';
 import { projectRule } from './project.js';
+import { nodeWatchmanRule } from './node-watchman.js';
 import { javaRule } from './java.js';
 import { gradleRule } from './gradle.js';
 import { androidSdkRule } from './android-sdk.js';
@@ -12,6 +13,7 @@ import { iosTargetRule } from './ios-target.js';
 
 export const ALL_RULES: Rule[] = [
   projectRule,
+  nodeWatchmanRule,
   javaRule,
   gradleRule,
   androidSdkRule,
@@ -25,6 +27,7 @@ export const ALL_RULES: Rule[] = [
 
 export {
   projectRule,
+  nodeWatchmanRule,
   javaRule,
   gradleRule,
   androidSdkRule,

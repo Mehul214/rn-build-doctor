@@ -41,10 +41,18 @@ export async function runDiagnostics(
   // 2. Filter rules based on target platform
   const applicableRules = ALL_RULES.filter((rule) => {
     if (platformFilter === 'android') {
-      return rule.category === 'android' || rule.category === 'project';
+      return (
+        rule.category === 'android' ||
+        rule.category === 'project' ||
+        rule.category === 'environment'
+      );
     }
     if (platformFilter === 'ios') {
-      return rule.category === 'ios' || rule.category === 'project';
+      return (
+        rule.category === 'ios' ||
+        rule.category === 'project' ||
+        rule.category === 'environment'
+      );
     }
     return true;
   });

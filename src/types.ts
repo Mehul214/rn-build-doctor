@@ -76,6 +76,7 @@ export interface HostEnvironment {
   isCommandLineToolsOnly: boolean;
   cocoapodsVersion?: string;
   rubyVersion?: string;
+  watchmanVersion?: string;
 }
 
 export interface DiagnosticContext {
